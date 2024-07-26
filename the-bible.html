@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5PH81TZBSM"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-5PH81TZBSM');
+    </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6559573485611070"
+        crossorigin="anonymous"></script>
+    <title>BibleHeaven.org - World English Bible</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Explore the World English Bible. Read the Holy Scriptures, explore prayers, discover verses by theme, and interact with our community. Delve into spirituality and gain wisdom at your pace.">
+    <link rel="icon" href="bible.png">
+    <link rel="stylesheet" type="text/css" href="styles2.css">
+</head>
+
+<body>
+    <div class="title-bar">
+        <div class="left-justified">
+            <a href="https://bibleheaven.org/">
+                <h2>BibleHeaven</h2>
+            </a>
+            <img src="bible.png" alt="Bible Icon">
+            <a href="the-bible.html" class="desktop-link">Read The Bible</a>
+            <p class="desktop-link">|</p>
+            <a href="prayers.html" class="desktop-link">Read Prayers</a>
+            <p class="desktop-link">|</p>
+            <a href="bible-verses.html" class="desktop-link">Verses by Theme</a>
+            <p class="desktop-link">|</p>
+            <a href="contact.html" class="desktop-link">Contact Us</a>
+            <p class="desktop-link">|</p>
+        </div>
+        <div class="right-justified">
+            <a href="https://twitter.com/BibleHeavenGod?ref_src=twsrc%5Etfw" class="twitter-follow-button"
+                data-size="large" data-show-screen-name="false" data-show-count="false">Follow @BibleHeavenGod</a>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="toggleMenu()">Menu &#9660;</button>
+                <div class="dropdown-content" id="dropdownContent">
+                    <br>
+                    <a href="https://twitter.com/BibleHeavenGod?ref_src=twsrc%5Etfw" class="twitter-follow-button"
+                        data-show-screen-name="false" data-show-count="false">Follow @BibleHeavenGod</a>
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    <a href="https://bibleheaven.org/">Home</a>
+                    <a href="the-bible.html">The Bible</a>
+                    <a href="prayers.html">Prayers</a>
+                    <a href="bible-verses.html">Verses by Theme</a>
+                    <a href="about.html">About Us</a>
+                    <a href="contact.html">Contact Us</a>
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="disclaimer.html">Disclaimer</a>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="bible-title">
+            <h1 style="color: darkred">World English Bible</h1>
+            <div class="navigation">
+                <div class="book-selector">
+                    <label for="bookSelector">Book:</label>
+                    <select id="bookSelector"></select>
+                </div>
+                <div class="chapter-buttons" id="chapterButtons"></div>
+            </div>
+            <br>
+            <div id="bibleContainer"></div>
+
+            <div class="prev-next-buttons">
+                <button id="prevButton" class="button">Previous Chapter</button>
+                <button id="nextButton" class="button">Next Chapter</button>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer-content">
+                <span>&copy; 2023 BibleHeaven.org. All rights reserved.</span>
+            </div>
+        </div>
+
+        <script src="script2.js"></script>
+</body>
+
+</html>

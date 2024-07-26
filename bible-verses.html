@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5PH81TZBSM"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-5PH81TZBSM');
+    </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6559573485611070"
+        crossorigin="anonymous"></script>
+    <title>BibleHeaven.org - Themed Verses</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="BibleHeaven.org: An interactive and easy way to search Bible verses by theme. Explore a wide array of themes including love, faith, hope, joy, and more. Find spiritual inspiration and guidance tailored to your interest.">
+    <link rel="icon" href="bible.png">
+    <link rel="stylesheet" type="text/css" href="styles2.css">
+    <style>
+        /* Add the additional styling for the container */
+        .verses-section {
+            margin-top: 80px;
+            background-color: #ffffff;
+            padding: 10px;
+            border-radius: 8px;
+            border-style: double;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-left: auto;
+            margin-right: auto;
+            width: 90%;
+            font-family: "Font Awesome 5 Free";
+        }
+
+        .verses-section h1 {
+            padding-left: 20px;
+            padding-right: 20px;
+            font-family: "Font Awesome 5 Free";
+            /* Replace with the appropriate Font Awesome font */
+            color: #333333;
+            font-size: 32px;
+            font-weight: bold;
+            text-decoration: underline;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Additional styling for category links */
+        .category-link {
+            display: inline-block;
+            margin: 5px;
+            padding: 15px 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .category-link.selected {
+            background-color: #007BFF;
+            color: #fff;
+        }
+
+        .verses-header {
+            text-align: center;
+        }
+
+        /* Additional styling for each verse */
+        #versesContainer {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        #versesContainer p {
+            margin: 5;
+            /* Remove default paragraph margin */
+            padding: 8px 50px;
+            /* Add some padding to the verses */
+            border-top: 5px solid goldenrod;
+            /* Add a border between verses */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="title-bar">
+        <div class="left-justified">
+            <a href="https://bibleheaven.org/">
+                <h2>BibleHeaven</h2>
+            </a>
+            <img src="bible.png" alt="Bible Icon">
+            <a href="the-bible.html" class="desktop-link">Read The Bible</a>
+            <p class="desktop-link">|</p>
+            <a href="prayers.html" class="desktop-link">Read Prayers</a>
+            <p class="desktop-link">|</p>
+            <a href="bible-verses.html" class="desktop-link">Verses by Theme</a>
+            <p class="desktop-link">|</p>
+            <a href="contact.html" class="desktop-link">Contact Us</a>
+            <p class="desktop-link">|</p>
+        </div>
+        <div class="right-justified">
+            <a href="https://twitter.com/BibleHeavenGod?ref_src=twsrc%5Etfw" class="twitter-follow-button"
+                data-size="large" data-show-screen-name="false" data-show-count="false">Follow @BibleHeavenGod</a>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="toggleMenu()">Menu &#9660;</button>
+                <div class="dropdown-content" id="dropdownContent">
+                    <br>
+                    <a href="https://twitter.com/BibleHeavenGod?ref_src=twsrc%5Etfw" class="twitter-follow-button"
+                        data-show-screen-name="false" data-show-count="false">Follow @BibleHeavenGod</a>
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    <a href="https://bibleheaven.org/">Home</a>
+                    <a href="the-bible.html">The Bible</a>
+                    <a href="prayers.html">Prayers</a>
+                    <a href="bible-verses.html">Verses by Theme</a>
+                    <a href="about.html">About Us</a>
+                    <a href="contact.html">Contact Us</a>
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="disclaimer.html">Disclaimer</a>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="verses-section">
+        <div class="versesHeader" style="margin-top: 30px;">
+            <h1 style="font-size: 32px; text-decoration: underline;">Bible Verses by Theme</h1>
+            <br>
+            <br>
+            <a href="#" class="category-link" data-category="love">Love</a>
+            <a href="#" class="category-link" data-category="faith">Faith</a>
+            <a href="#" class="category-link" data-category="forgiveness">Forgiveness</a>
+            <a href="#" class="category-link" data-category="hope">Hope</a>
+            <a href="#" class="category-link" data-category="joy">Joy</a>
+            <a href="#" class="category-link" data-category="peace">Peace</a>
+            <a href="#" class="category-link" data-category="patience">Patience</a>
+            <a href="#" class="category-link" data-category="gratitude">Gratitude</a>
+            <a href="#" class="category-link" data-category="humility">Humility</a>
+            <a href="#" class="category-link" data-category="courage">Courage</a>
+            <a href="#" class="category-link" data-category="kindness">Kindness</a>
+            <a href="#" class="category-link" data-category="generosity">Generosity</a>
+            <a href="#" class="category-link" data-category="wisdom">Wisdom</a>
+            <a href="#" class="category-link" data-category="comfort">Comfort</a>
+            <a href="#" class="category-link" data-category="perseverance">Perseverance</a>
+            <a href="#" class="category-link" data-category="grace">Grace</a>
+            <a href="#" class="category-link" data-category="salvation">Salvation</a>
+            <a href="#" class="category-link" data-category="repentance">Repentance</a>
+            <a href="#" class="category-link" data-category="obedience">Obedience</a>
+            <a href="#" class="category-link" data-category="thankfulness">Thankfulness</a>
+            <a href="#" class="category-link" data-category="self-control">Self-Control</a>
+            <a href="#" class="category-link" data-category="faithfulness">Faithfulness</a>
+            <!-- Add more categories as needed -->
+        </div>
+        <br>
+        <br>
+        <!-- Div to display the verses -->
+        <div id="versesContainer" class="widget" style="margin-top: 30px;"></div>
+
+
+        <script src="script2.js"></script>
+        <script>
+            // Function to randomly select a category
+            function getRandomCategory() {
+                const categoryLinks = document.querySelectorAll(".category-link");
+                const randomIndex = Math.floor(Math.random() * categoryLinks.length);
+                return categoryLinks[randomIndex].dataset.category;
+            }
+
+            // Function to update the selected category link style
+            function updateSelectedCategoryLink(selectedCategory) {
+                const categoryLinks = document.querySelectorAll(".category-link");
+                categoryLinks.forEach(link => {
+                    if (link.dataset.category === selectedCategory) {
+                        link.classList.add("selected");
+                    } else {
+                        link.classList.remove("selected");
+                    }
+                });
+            }
+
+            function toggleMenu() {
+                const dropdownContent = document.getElementById("dropdownContent");
+                dropdownContent.classList.toggle("show");
+            }
+
+            // Event listener for category links
+            const categoryLinks = document.querySelectorAll(".category-link");
+            categoryLinks.forEach(link => {
+                link.addEventListener("click", () => {
+                    const selectedCategory = link.dataset.category;
+                    displayVerses(selectedCategory);
+                    updateSelectedCategoryLink(selectedCategory);
+                });
+            });
+
+            // Function to display verses based on the selected category
+            function displayVerses(category) {
+                // Replace this section with your code to display verses for the selected category
+                // For demonstration purposes, let's add some sample verses based on the selected category
+                const versesContainer = document.getElementById("versesContainer");
+                let verses = [];
+
+                switch (category) {
+                    case "love":
+                        verses = [
+                            "For God so loved the world that he gave his one and only Son, that whoever believes in him shall not perish but have eternal life. - John 3:16",
+                            "Love is patient, love is kind. It does not envy, it does not boast, it is not proud. - 1 Corinthians 13:4",
+                            "A friend loves at all times, and a brother is born for a time of adversity. - Proverbs 17:17",
+                            "Let love and faithfulness never leave you; bind them around your neck, write them on the tablet of your heart. - Proverbs 3:3",
+                            "And over all these virtues, put on love, which binds them all together in perfect unity. - Colossians 3:14",
+                            "We love because he first loved us. - 1 John 4:19",
+                            "There is no fear in love. But perfect love drives out fear because fear has to do with punishment. The one who fears is not made perfect in love. - 1 John 4:18",
+                            "Dear friends, let us love one another, for love comes from God. Everyone who loves has been born of God and knows God. - 1 John 4:7",
+                            "Above all, love each other deeply because love covers over a multitude of sins. - 1 Peter 4:8",
+                            "Let all that you do be done in love. - 1 Corinthians 16:14",
+                            "Beloved, let us love one another, for love is from God, and whoever loves has been born of God and knows God. - 1 John 4:7",
+                            "And now these three remain: faith, hope, and love. But the greatest of these is love. - 1 Corinthians 13:13",
+                            "Be kind to one another, tenderhearted, forgiving one another, as God in Christ forgave you. - Ephesians 4:32",
+                            "Let no debt remain outstanding, except the continuing debt to love one another, for whoever loves others has fulfilled the law. - Romans 13:8",
+                            "Husbands, love your wives, just as Christ loved the church and gave himself up for her. - Ephesians 5:25",
+                            "So now I am giving you a new commandment: Love each other. Just as I have loved you, you should love each other. - John 13:34"
+                        ];
+                        break;
+
+                    case "faith":
+                        verses = [
+                            "Now faith is confidence in what we hope for and assurance about what we do not see. - Hebrews 11:1",
+                            "And without faith, it is impossible to please God because anyone who comes to him must believe that he exists and that he rewards those who earnestly seek him. - Hebrews 11:6",
+                            "I have been crucified with Christ and I no longer live, but Christ lives in me. The life I now live in the body, I live by faith in the Son of God, who loved me and gave himself for me. - Galatians 2:20",
+                            "Therefore, since we have been justified through faith, we have peace with God through our Lord Jesus Christ. - Romans 5:1",
+                            "So faith comes from hearing, and hearing through the word of Christ. - Romans 10:17",
+                            "But you, man of God, flee from all this and pursue righteousness, godliness, faith, love, endurance, and gentleness. - 1 Timothy 6:11",
+                            // Additional verses for the "faith" category
+                            "For we live by faith, not by sight. - 2 Corinthians 5:7",
+                            "And whatever you ask in prayer, you will receive if you have faith. - Matthew 21:22",
+                            "And Jesus answered them, “Have faith in God. - Mark 11:22",
+                            "For by grace, you have been saved through faith. And this is not your own doing; it is the gift of God. - Ephesians 2:8",
+                            "But let him ask in faith, with no doubting, for the one who doubts is like a wave of the sea that is driven and tossed by the wind. - James 1:6",
+                            "For truly, I say to you, if you have faith like a grain of mustard seed, you will say to this mountain, Move from here to there, and it will move, and nothing will be impossible for you. - Matthew 17:20",
+                            "And Jesus said to him, If you can! All things are possible for one who believes. - Mark 9:23",
+                            "So faith comes from hearing, and hearing through the word of Christ. - Romans 10:17",
+                            "Therefore I tell you, whatever you ask in prayer, believe that you have received it, and it will be yours. - Mark 11:24",
+                            "But thanks be to God, who gives us the victory through our Lord Jesus Christ. - 1 Corinthians 15:57"
+                        ];
+                        break;
+
+                    case "forgiveness":
+                        verses = [
+                            "Bear with each other and forgive one another if any of you has a grievance against someone. Forgive as the Lord forgave you. - Colossians 3:13",
+                            "For if you forgive other people when they sin against you, your heavenly Father will also forgive you. - Matthew 6:14",
+                            "Then Peter came to Jesus and asked, 'Lord, how many times shall I forgive my brother or sister who sins against me? Up to seven times?' Jesus answered, 'I tell you, not seven times, but seventy-seven times.' - Matthew 18:21-22",
+                            "If we confess our sins, he is faithful and just and will forgive us our sins and purify us from all unrighteousness. - 1 John 1:9",
+                            "Be kind and compassionate to one another, forgiving each other, just as in Christ, God forgave you. - Ephesians 4:32",
+                            "Then he adds, 'I will remember their sins and their lawless deeds no more.' - Hebrews 10:17",
+                            "For if you forgive others their trespasses, your heavenly Father will also forgive you. - Matthew 6:14",
+                            "Judge not, and you will not be judged; condemn not, and you will not be condemned; forgive, and you will be forgiven. - Luke 6:37",
+                            "And his master's heart was moved with pity, and he released him and forgave him the debt. - Matthew 18:27",
+                            "Be kind to one another, tenderhearted, forgiving one another, as God in Christ forgave you. - Ephesians 4:32",
+                            "For I will be merciful toward their iniquities, and I will remember their sins no more. - Hebrews 8:12",
+                            "So also my heavenly Father will do to every one of you if you do not forgive your brother from your heart. - Matthew 18:35",
+                            "But I say to you who hear, Love your enemies, do good to those who hate you, bless those who curse you, pray for those who abuse you. - Luke 6:27-28",
+                            "Pay attention to yourselves! If your brother sins, rebuke him, and if he repents, forgive him. - Luke 17:3",
+                            "And whenever you stand praying, forgive, if you have anything against anyone, so that your Father also who is in heaven may forgive you your trespasses. - Mark 11:25",
+                            "Who is a God like you, pardoning iniquity and passing over transgression for the remnant of his inheritance? He does not retain his anger forever, because he delights in steadfast love. - Micah 7:18",
+                            "If my people who are called by my name humble themselves, and pray and seek my face and turn from their wicked ways, then I will hear from heaven and will forgive their sin and heal their land. - 2 Chronicles 7:14",
+                            "And when you stand praying, if you hold anything against anyone, forgive them, so that your Father in heaven may forgive you your sins. - Mark 11:25",
+                            "And forgive us our debts, as we also have forgiven our debtors. - Matthew 6:12"
+                        ];
+                        break;
+
+                    case "hope":
+                        verses = [
+                            "May the God of hope fill you with all joy and peace as you trust in him so that you may overflow with hope by the power of the Holy Spirit. - Romans 15:13",
+                            "For I know the plans I have for you,' declares the Lord, 'plans to prosper you and not to harm you, plans to give you hope and a future. - Jeremiah 29:11",
+                            "But those who hope in the Lord will renew their strength. They will soar on wings like eagles; they will run and not grow weary, they will walk and not be faint. - Isaiah 40:31",
+                            "Praise be to the God and Father of our Lord Jesus Christ! In his great mercy, he has given us new birth into a living hope through the resurrection of Jesus Christ from the dead. - 1 Peter 1:3",
+                            "Why, my soul, are you downcast? Why so disturbed within me? Put your hope in God, for I will yet praise him, my Savior, and my God. - Psalm 42:11",
+                            "Now faith is confidence in what we hope for and assurance about what we do not see. - Hebrews 11:1",
+                            "And now these three remain: faith, hope, and love. But the greatest of these is love. - 1 Corinthians 13:13",
+                            "Rejoice in hope, be patient in tribulation, be constant in prayer. - Romans 12:12",
+                            "But if we hope for what we do not see, we wait for it with patience. - Romans 8:25",
+                            "May the God of hope fill you with all joy and peace in believing, so that by the power of the Holy Spirit you may abound in hope. - Romans 15:13",
+                            "But let all who take refuge in you rejoice; let them sing joyful praises forever. Spread your protection over them, that all who love your name may be filled with joy. - Psalm 5:11",
+                            "But the Lord takes pleasure in those who fear him, in those who hope in his steadfast love. - Psalm 147:11",
+                            "The Lord is my portion, says my soul, therefore I will hope in him. - Lamentations 3:24",
+                            "For in this hope, we were saved. Now hope that is seen is not hope. For who hopes for what he sees? - Romans 8:24",
+                            "And hope does not put us to shame, because God's love has been poured into our hearts through the Holy Spirit who has been given to us. - Romans 5:5",
+                            "Be strong, and let your heart take courage, all you who wait for the Lord! - Psalm 31:24",
+                            "But you, O Lord, are a shield about me, my glory, and the lifter of my head. - Psalm 3:3",
+                            "The hope of the righteous brings joy, but the expectation of the wicked will perish. - Proverbs 10:28",
+                            "I wait for the Lord, my soul waits, and in his word, I hope; - Psalm 130:5",
+                            "Now may our Lord Jesus Christ himself, and God our Father, who loved us and gave us eternal comfort and good hope through grace, - 2 Thessalonians 2:16",
+                            "Blessed is the man who trusts in the Lord, whose trust is the Lord. - Jeremiah 17:7",
+                            "For the Lord will be your confidence and will keep your foot from being caught. - Proverbs 3:26",
+                            "In all circumstances take up the shield of faith, with which you can extinguish all the flaming darts of the evil one; - Ephesians 6:16",
+                            "But my righteous one shall live by faith, and if he shrinks back, my soul has no pleasure in him. - Hebrews 10:38",
+                            "But the Lord is faithful. He will establish you and guard you against the evil one. - 2 Thessalonians 3:3",
+                            "So faith comes from hearing, and hearing through the word of Christ. - Romans 10:17"
+                        ];
+                        break;
+
+                    case "joy":
+                        verses = [
+                            "The joy of the Lord is your strength. - Nehemiah 8:10",
+                            "Rejoice in the Lord always; again, I will say, rejoice. - Philippians 4:4",
+                            "May the God of hope fill you with all joy and peace in believing, so that by the power of the Holy Spirit you may abound in hope. - Romans 15:13",
+                            "You make known to me the path of life; in your presence, there is fullness of joy; at your right hand are pleasures forevermore. - Psalm 16:11",
+                            "Until now you have asked nothing in my name. Ask, and you will receive, that your joy may be full. - John 16:24",
+                            "Though you have not seen him, you love him. Though you do not now see him, you believe in him and rejoice with joy that is inexpressible and filled with glory, - 1 Peter 1:8",
+                            "These things I have spoken to you, that my joy may be in you, and that your joy may be full. - John 15:11",
+                            "For the kingdom of God is not a matter of eating and drinking but of righteousness and peace and joy in the Holy Spirit. - Romans 14:17",
+                            "But let all who take refuge in you rejoice; let them ever sing for joy, and spread your protection over them, that those who love your name may exult in you. - Psalm 5:11",
+                            "So also you have sorrow now, but I will see you again, and your hearts will rejoice, and no one will take your joy from you. - John 16:22",
+                            "Shout for joy in the Lord, O you righteous! Praise befits the upright. - Psalm 33:1",
+                            "The hope of the righteous brings joy, but the expectation of the wicked will perish. - Proverbs 10:28",
+                            "Be glad in the Lord, and rejoice, O righteous, and shout for joy, all you upright in heart! - Psalm 32:11",
+                            "I will greatly rejoice in the Lord; my soul shall exult in my God, for he has clothed me with the garments of salvation; he has covered me with the robe of righteousness, as a bridegroom decks himself like a priest with a beautiful headdress, and as a bride adorns herself with her jewels. - Isaiah 61:10",
+                            "Though the fig tree should not blossom, nor fruit be on the vines, the produce of the olive fail and the fields yield no food, the flock be cut off from the fold and there be no herd in the stalls, yet I will rejoice in the Lord; I will take joy in the God of my salvation. - Habakkuk 3:17-18",
+                            "Rejoice always, pray without ceasing, give thanks in all circumstances; for this is the will of God in Christ Jesus for you. - 1 Thessalonians 5:16-18",
+                            "You have put more joy in my heart than they have when their grain and wine abound. - Psalm 4:7",
+                            "Your testimonies are my heritage forever, for they are the joy of my heart. - Psalm 119:111",
+                            "The prospect of the righteous is joy, but the hopes of the wicked come to nothing. - Proverbs 10:28",
+                            "He will yet fill your mouth with laughter, and your lips with shouting. - Job 8:21"
+                        ];
+                        break;
+
+                    case "peace":
+                        verses = [
+                            "Peace I leave with you; my peace I give to you. Not as the world gives do I give to you. Let not your hearts be troubled, neither let them be afraid. - John 14:27",
+                            "Now may the Lord of peace himself give you peace at all times in every way. The Lord be with you all. - 2 Thessalonians 3:16",
+                            "I have said these things to you, that in me you may have peace. In the world, you will have tribulation. But take heart; I have overcome the world. - John 16:33",
+                            "And the peace of God, which surpasses all understanding, will guard your hearts and your minds in Christ Jesus. - Philippians 4:7",
+                            "May the God of hope fill you with all joy and peace in believing, so that by the power of the Holy Spirit you may abound in hope. - Romans 15:13",
+                            "For to set the mind on the flesh is death, but to set the mind on the Spirit is life and peace. - Romans 8:6",
+                            "And let the peace of Christ rule in your hearts, to which indeed you were called in one body. And be thankful. - Colossians 3:15",
+                            "When a man's ways please the Lord, he makes even his enemies to be at peace with him. - Proverbs 16:7",
+                            "Depart from evil, and do good; seek peace, and pursue it. - Psalm 34:14",
+                            "Now may our Lord Jesus Christ himself, and God our Father, who loved us and gave us eternal comfort and good hope through grace, comfort your hearts and establish them in every good work and word. - 2 Thessalonians 2:16-17",
+                            "So then let us pursue what makes for peace and for mutual upbuilding. - Romans 14:19",
+                            "Great peace have those who love your law; nothing can make them stumble. - Psalm 119:165",
+                            "And the effect of righteousness will be peace, and the result of righteousness, quietness, and trust forever. - Isaiah 32:17",
+                            "May mercy, peace, and love be multiplied to you. - Jude 1:2",
+                            "For God is not a God of confusion but of peace. - 1 Corinthians 14:33",
+                            "And let the peace of Christ rule in your hearts, to which indeed you were called in one body. And be thankful. - Colossians 3:15",
+                            "Though the mountains be shaken and the hills be removed, yet my unfailing love for you will not be shaken nor my covenant of peace be removed, says the Lord, who has compassion on you. - Isaiah 54:10",
+                            "He has delivered my soul in peace from the battle that was against me, for there were many against me. - Psalm 55:18",
+                            "Mark the blameless and behold the upright, for there is a future for the man of peace. - Psalm 37:37",
+                            "A soft answer turns away wrath, but a harsh word stirs up anger. - Proverbs 15:1",
+                            "You will keep in perfect peace those whose minds are steadfast because they trust in you. - Isaiah 26:3",
+                            "Let him turn away from evil and do good; let him seek peace and pursue it. - 1 Peter 3:11",
+                            "I will make with them a covenant of peace and banish wild beasts from the land, so that they may dwell securely in the wilderness and sleep in the woods. - Ezekiel 34:25"
+                        ];
+                        break;
+
+                    case "patience":
+                        verses = [
+                            "The Lord is not slow to fulfill his promise as some count slowness, but is patient toward you, not wishing that any should perish, but that all should reach repentance. - 2 Peter 3:9",
+                            "With all humility and gentleness, with patience, bearing with one another in love, - Ephesians 4:2",
+                            "Love is patient and kind; love does not envy or boast; it is not arrogant. - 1 Corinthians 13:4",
+                            "Count it all joy, my brothers, when you meet trials of various kinds, for you know that the testing of your faith produces steadfastness. - James 1:2-3",
+                            "Be patient, therefore, brothers, until the coming of the Lord. See how the farmer waits for the precious fruit of the earth, being patient about it, until it receives the early and the late rains. - James 5:7",
+                            "And we urge you, brothers, admonish the idle, encourage the fainthearted, help the weak, be patient with them all. - 1 Thessalonians 5:14",
+                            "But if we hope for what we do not see, we wait for it with patience. - Romans 8:25",
+                            "The Lord is merciful and gracious, slow to anger and abounding in steadfast love. - Psalm 103:8",
+                            "A hot-tempered man stirs up strife, but he who is slow to anger quiets contention. - Proverbs 15:18",
+                            "Whoever is slow to anger is better than the mighty, and he who rules his spirit than he who takes a city. - Proverbs 16:32",
+                            "Be still before the Lord and wait patiently for him; fret not yourself over the one who prospers in his way, over the man who carries out evil devices! - Psalm 37:7",
+                            "But you, O Lord, are a God merciful and gracious, slow to anger and abounding in steadfast love and faithfulness. - Psalm 86:15",
+                            "But they who wait for the Lord shall renew their strength; they shall mount up with wings like eagles; they shall run and not be weary; they shall walk and not faint. - Isaiah 40:31",
+                            "Whoever is slow to anger has great understanding, but he who has a hasty temper exalts folly. - Proverbs 14:29",
+                            "The Lord is gracious and merciful, slow to anger and abounding in steadfast love. - Psalm 145:8",
+                            "The Lord is slow to anger and great in power, and the Lord will by no means clear the guilty. His way is in whirlwind and storm, and the clouds are the dust of his feet. - Nahum 1:3",
+                            "The Lord passed before him and proclaimed, “The Lord, the Lord, a God merciful and gracious, slow to anger, and abounding in steadfast love and faithfulness. - Exodus 34:6",
+                            "But you, O Lord, are a God merciful and gracious, slow to anger and abounding in steadfast love and faithfulness. - Psalm 103:8",
+                            "But he, being full of compassion, forgave their iniquity, and did not destroy them. Yes, many a time he turned his anger away, and did not stir up all his wrath. - Psalm 78:38",
+                            "You also, be patient. Establish your hearts, for the coming of the Lord is at hand. - James 5:8",
+                            "Wait for the Lord; be strong, and let your heart take courage; wait for the Lord! - Psalm 27:14",
+                            "For whatever was written in former days was written for our instruction, that through endurance and through the encouragement of the Scriptures we might have hope. - Romans 15:4",
+                            "Therefore the Lord waits to be gracious to you, and therefore he exalts himself to show mercy to you. For the Lord is a God of justice; blessed are all those who wait for him. - Isaiah 30:18",
+                            "Whoever is slow to anger is better than the mighty, and he who rules his spirit than he who takes a city. - Proverbs 16:32",
+                            "But the fruit of the Spirit is love, joy, peace, patience, kindness, goodness, faithfulness, - Galatians 5:22",
+                            "But you, O Lord, are a God merciful and gracious, slow to anger and abounding in steadfast love and faithfulness. - Psalm 86:15",
+                            "With patience, a ruler may be persuaded, and a soft tongue will break a bone. - Proverbs 25:15",
+                            "Be patient, therefore, brothers, until the coming of the Lord. See how the farmer waits for the precious fruit of the earth, being patient about it, until it receives the early and the late rains. - James 5:7",
+                            "But if we hope for what we do not see, we wait for it with patience. - Romans 8:25",
+                            "A hot-tempered man stirs up strife, but he who is slow to anger quiets contention. - Proverbs 15:18"
+                        ];
+                        break;
+
+                    case "gratitude":
+                        verses = [
+                            "Give thanks in all circumstances; for this is the will of God in Christ Jesus for you. - 1 Thessalonians 5:18",
+                            "Do not be anxious about anything, but in everything by prayer and supplication with thanksgiving let your requests be made known to God. - Philippians 4:6",
+                            "Oh, give thanks to the Lord, for he is good, for his steadfast love endures forever! - Psalm 107:1",
+                            "Give thanks to the Lord of lords, for his steadfast love endures forever; - Psalm 136:3",
+                            "I will give thanks to the Lord with my whole heart; I will recount all of your wonderful deeds. - Psalm 9:1",
+                            "Enter his gates with thanksgiving, and his courts with praise! Give thanks to him; bless his name! - Psalm 100:4",
+                            "Give thanks always and for everything to God the Father in the name of our Lord Jesus Christ, - Ephesians 5:20",
+                            "Let them thank the Lord for his steadfast love, for his wondrous works to the children of man! - Psalm 107:8",
+                            "Oh give thanks to the Lord; call upon his name; make known his deeds among the peoples! - 1 Chronicles 16:8",
+                            "Therefore, as you received Christ Jesus the Lord, so walk in him, rooted and built up in him and established in the faith, just as you were taught, abounding in thanksgiving. - Colossians 2:6-7",
+                            "And one of them, when he saw that he was healed, turned back, praising God with a loud voice; and he fell on his face at Jesus' feet, giving him thanks. Now he was a Samaritan. - Luke 17:15-16",
+                            "I will praise the name of God with a song; I will magnify him with thanksgiving. - Psalm 69:30",
+                            "Continue steadfastly in prayer, being watchful in it with thanksgiving. - Colossians 4:2",
+                            "The one who offers thanksgiving as his sacrifice glorifies me; to one who orders his way rightly, I will show the salvation of God! - Psalm 50:23",
+                            "And let them offer sacrifices of thanksgiving, and tell of his deeds in songs of joy! - Psalm 107:22",
+                            "Do not be anxious about anything, but in everything by prayer and supplication with thanksgiving let your requests be made known to God. - Philippians 4:6",
+                            "Through him then let us continually offer up a sacrifice of praise to God, that is, the fruit of lips that acknowledge his name. - Hebrews 13:15",
+                            "What shall I render to the Lord for all his benefits to me? - Psalm 116:12",
+                            "I will give thanks to you, O Lord my God, with my whole heart, and I will glorify your name forever. - Psalm 86:12",
+                            "Give thanks to the Lord, for he is good, for his steadfast love endures forever. - Psalm 136:1",
+                            "I will give thanks to the Lord with my whole heart; I will recount all of your wonderful deeds. - Psalm 9:1",
+                            "You will be enriched in every way to be generous in every way, which through us will produce thanksgiving to God. - 2 Corinthians 9:11",
+                            "Let us come into his presence with thanksgiving; let us make a joyful noise to him with songs of praise! - Psalm 95:2",
+                            "Giving thanks always and for everything to God the Father in the name of our Lord Jesus Christ, - Ephesians 5:20",
+                            "I will praise the name of God with a song; I will magnify him with thanksgiving. - Psalm 69:30",
+                            "But thanks be to God, who gives us the victory through our Lord Jesus Christ. - 1 Corinthians 15:57",
+                            "The Lord is my strength and my shield; in him my heart trusts, and I am helped; my heart exults, and with my song, I give thanks to him. - Psalm 28:7",
+                            "Sing praises to the Lord, O you his saints, and give thanks to his holy name. - Psalm 30:4",
+                            "Oh give thanks to the Lord; call upon his name; make known his deeds among the peoples! - Psalm 105:1",
+                            "I will give thanks to the Lord with my whole heart, in the company of the upright, in the congregation. - Psalm 111:1",
+                            "But we ought always to give thanks to God for you, brothers beloved by the Lord, because God chose you as the firstfruits to be saved, through sanctification by the Spirit and belief in the truth. - 2 Thessalonians 2:13"
+                        ];
+                        break;
+
+                    // Humility
+                    case "humility":
+                        verses = [
+                            "When pride comes, then comes disgrace, but with humility comes wisdom. - Proverbs 11:2",
+                            "Humble yourselves before the Lord, and he will lift you up. - James 4:10",
+                            "Do nothing out of selfish ambition or vain conceit. Rather, in humility value others above yourselves. - Philippians 2:3",
+                            "He has shown you, O mortal, what is good. And what does the LORD require of you? To act justly and to love mercy and to walk humbly with your God. - Micah 6:8",
+                            "The greatest among you will be your servant. For those who exalt themselves will be humbled, and those who humble themselves will be exalted. - Matthew 23:11-12",
+                            "Take my yoke upon you and learn from me, for I am gentle and humble in heart, and you will find rest for your souls. - Matthew 11:29",
+                            "Live in harmony with one another. Do not be proud, but be willing to associate with people of low position. Do not be conceited. - Romans 12:16",
+                            "But he gives us more grace. That is why Scripture says: 'God opposes the proud but shows favor to the humble.' - James 4:6",
+                            "Who is wise and understanding among you? Let them show it by their good life, by deeds done in the humility that comes from wisdom. - James 3:13",
+                            "Do not repay evil with evil or insult with insult. On the contrary, repay evil with blessing, because to this you were called so that you may inherit a blessing. - 1 Peter 3:9",
+                            // Add more verses for the "humility" category
+                        ];
+                        break;
+
+                    // Courage
+                    case "courage":
+                        verses = [
+                            "Be strong and courageous. Do not be afraid or terrified because of them, for the LORD your God goes with you; he will never leave you nor forsake you. - Deuteronomy 31:6",
+                            "Have I not commanded you? Be strong and courageous. Do not be afraid; do not be discouraged, for the LORD your God will be with you wherever you go. - Joshua 1:9",
+                            "Wait for the LORD; be strong and take heart and wait for the LORD. - Psalm 27:14",
+                            "So do not fear, for I am with you; do not be dismayed, for I am your God. I will strengthen you and help you; I will uphold you with my righteous right hand. - Isaiah 41:10",
+                            "Finally, be strong in the Lord and in his mighty power. - Ephesians 6:10",
+                            "But Jesus immediately said to them: 'Take courage! It is I. Don't be afraid.' - Matthew 14:27",
+                            "I have told you these things so that in me you may have peace. In this world, you will have trouble. But take heart! I have overcome the world. - John 16:33",
+                            "Be on your guard; stand firm in the faith; be courageous; be strong. - 1 Corinthians 16:13",
+                            "Be strong and courageous. Do not be afraid or discouraged because of the king of Assyria and the vast army with him, for there is a greater power with us than with him. - 2 Chronicles 32:7",
+                            "The wicked flee though no one pursues, but the righteous are as bold as a lion. - Proverbs 28:1",
+                            // Add more verses for the "courage" category
+                        ];
+                        break;
+
+                    // Kindness
+                    case "kindness":
+                        verses = [
+                            "Be kind and compassionate to one another, forgiving each other, just as in Christ God forgave you. - Ephesians 4:32",
+                            "But love your enemies, do good to them, and lend to them without expecting to get anything back. Then your reward will be great, and you will be children of the Most High, because he is kind to the ungrateful and wicked. - Luke 6:35",
+                            "A friend loves at all times, and a brother is born for a time of adversity. - Proverbs 17:17",
+                            "Be kind to one another, tenderhearted, forgiving one another, as God in Christ forgave you. - Ephesians 4:32",
+                            "Let love and faithfulness never leave you; bind them around your neck, write them on the tablet of your heart. - Proverbs 3:3",
+                            "The one who is gracious to the poor lends to the LORD, and the LORD will repay him for his good deed. - Proverbs 19:17",
+                            "And as you wish that others would do to you, do so to them. - Luke 6:31",
+                            "Put on then, as God's chosen ones, holy and beloved, compassionate hearts, kindness, humility, meekness, and patience, - Colossians 3:12",
+                            "Therefore, as God's chosen people, holy and dearly loved, clothe yourselves with compassion, kindness, humility, gentleness, and patience. - Colossians 3:12",
+                            "Let no one ever come to you without leaving better and happier. - Mother Teresa",
+                            // Add more verses for the "kindness" category
+                        ];
+                        break;
+
+
+                    case "generosity":
+                        verses = [
+                            "Each of you should give what you have decided in your heart to give, not reluctantly or under compulsion, for God loves a cheerful giver. - 2 Corinthians 9:7",
+                            "A generous person will prosper; whoever refreshes others will be refreshed. - Proverbs 11:25",
+                            "Give, and it will be given to you. A good measure, pressed down, shaken together and running over, will be poured into your lap. For with the measure you use, it will be measured to you. - Luke 6:38",
+                            "The generous will themselves be blessed, for they share their food with the poor. - Proverbs 22:9",
+                            "Command those who are rich in this present world not to be arrogant nor to put their hope in wealth, which is so uncertain, but to put their hope in God, who richly provides us with everything for our enjoyment. - 1 Timothy 6:17",
+                            "Do not forget to do good and to share with others, for with such sacrifices God is pleased. - Hebrews 13:16",
+                            "Whoever is generous to the poor lends to the LORD, and he will repay him for his deed. - Proverbs 19:17",
+                            "In everything I did, I showed you that by this kind of hard work we must help the weak, remembering the words the Lord Jesus himself said: 'It is more blessed to give than to receive.' - Acts 20:35",
+                            "And when you reap the harvest of your land, do not reap to the very edges of your field or gather the gleanings of your harvest. Leave them for the poor and for the foreigner residing among you. I am the LORD your God. - Leviticus 23:22",
+                            "Give to everyone who asks you, and if anyone takes what belongs to you, do not demand it back. - Luke 6:30",
+                            // Add more verses for the "generosity" category
+                        ];
+                        break;
+
+                    // Self-Control
+                    case "self-control":
+                        verses = [
+                            "Like a city whose walls are broken through is a person who lacks self-control. - Proverbs 25:28",
+                            "For the grace of God has appeared that offers salvation to all people. It teaches us to say 'No' to ungodliness and worldly passions and to live self-controlled, upright, and godly lives in this present age. - Titus 2:11-12",
+                            "For God gave us a spirit not of fear but of power and love and self-control. - 2 Timothy 1:7",
+                            "A person without self-control is like a city with broken-down walls. - Proverbs 25:28",
+                            "For the moment all discipline seems painful rather than pleasant, but later it yields the peaceful fruit of righteousness to those who have been trained by it. - Hebrews 12:11",
+                            "Do you not know that in a race all the runners run, but only one gets the prize? Run in such a way as to get the prize. Everyone who competes in the games goes into strict training. They do it to get a crown that will not last, but we do it to get a crown that will last forever. - 1 Corinthians 9:24-25",
+                            "But I discipline my body and keep it under control, lest after preaching to others I myself should be disqualified. - 1 Corinthians 9:27",
+                            "For the drunkard and the glutton will come to poverty, and slumber will clothe them with rags. - Proverbs 23:21",
+                            "A man without self-control is like a city broken into and left without walls. - Proverbs 25:28",
+                            "Whoever has no rule over his own spirit is like a city broken down, without walls. - Proverbs 25:28 (NKJV)",
+                            // Add more verses for the "self-control" category
+                        ];
+                        break;
+
+
+                    // Faithfulness
+                    case "faithfulness":
+                        verses = [
+                            "Know therefore that the LORD your God is God; he is the faithful God, keeping his covenant of love to a thousand generations of those who love him and keep his commandments. - Deuteronomy 7:9",
+                            "Let love and faithfulness never leave you; bind them around your neck, write them on the tablet of your heart. Then you will win favor and a good name in the sight of God and man. - Proverbs 3:3-4",
+                            "He will not let your foot slip— he who watches over you will not slumber. - Psalm 121:3",
+                            "A faithful person will be richly blessed, but one eager to get rich will not go unpunished. - Proverbs 28:20",
+                            "The LORD's lovingkindnesses indeed never cease, for His compassions never fail. They are new every morning; great is Your faithfulness. - Lamentations 3:22-23",
+                            "Let us hold unswervingly to the hope we profess, for he who promised is faithful. - Hebrews 10:23",
+                            "I have been crucified with Christ and I no longer live, but Christ lives in me. The life I now live in the body, I live by faith in the Son of God, who loved me and gave himself for me. - Galatians 2:20",
+                            "Now it is required that those who have been given a trust must prove faithful. - 1 Corinthians 4:2",
+                            "But the fruit of the Spirit is love, joy, peace, forbearance, kindness, goodness, faithfulness. - Galatians 5:22",
+                            "His master replied, 'Well done, good and faithful servant! You have been faithful with a few things; I will put you in charge of many things. Come and share your master's happiness!' - Matthew 25:21",
+                            // Add more verses for the "faithfulness" category
+                        ];
+                        break;
+
+                    // Contentment
+                    case "contentment":
+                        verses = [
+                            "Keep your life free from the love of money, and be content with what you have, for he has said, 'I will never leave you nor forsake you.' - Hebrews 13:5",
+                            "But godliness with contentment is great gain. For we brought nothing into the world, and we can take nothing out of it. But if we have food and clothing, we will be content with that. - 1 Timothy 6:6-8",
+                            "I am not saying this because I am in need, for I have learned to be content whatever the circumstances. I know what it is to be in need, and I know what it is to have plenty. I have learned the secret of being content in any and every situation, whether well fed or hungry, whether living in plenty or in want. - Philippians 4:11-12",
+                            "Better a little with the fear of the LORD than great wealth with turmoil. - Proverbs 15:16",
+                            "The fear of the LORD leads to life; then one rests content, untouched by trouble. - Proverbs 19:23",
+                            "The righteous eat to their hearts' content, but the stomach of the wicked goes hungry. - Proverbs 13:25",
+                            "Satisfaction comes from God alone. - Psalm 107:9",
+                            "Keep falsehood and lies far from me; give me neither poverty nor riches, but give me only my daily bread. - Proverbs 30:8",
+                            "A heart at peace gives life to the body, but envy rots the bones. - Proverbs 14:30",
+                            "All the days of the oppressed are wretched, but the cheerful heart has a continual feast. - Proverbs 15:15",
+                            // Add more verses for the "contentment" category
+                        ];
+                        break;
+
+                    // Perseverance
+                    case "perseverance":
+                        verses = [
+                            "Therefore, my dear brothers and sisters, stand firm. Let nothing move you. Always give yourselves fully to the work of the Lord, because you know that your labor in the Lord is not in vain. - 1 Corinthians 15:58",
+                            "Let us not become weary in doing good, for at the proper time we will reap a harvest if we do not give up. - Galatians 6:9",
+                            "Blessed is the one who perseveres under trial because, having stood the test, that person will receive the crown of life that the Lord has promised to those who love him. - James 1:12",
+                            "I can do all this through him who gives me strength. - Philippians 4:13",
+                            "Not only so, but we also glory in our sufferings, because we know that suffering produces perseverance; perseverance, character; and character, hope. - Romans 5:3-4",
+                            "For you have need of endurance, so that when you have done the will of God you may receive what is promised. - Hebrews 10:36",
+                            "Consider it pure joy, my brothers and sisters, whenever you face trials of many kinds, because you know that the testing of your faith produces perseverance. - James 1:2-3",
+                            "But he who stands firm to the end will be saved. - Matthew 24:13",
+                            "I have fought the good fight, I have finished the race, I have kept the faith. - 2 Timothy 4:7",
+                            "Forgetting what is behind and straining toward what is ahead, I press on toward the goal to win the prize for which God has called me heavenward in Christ Jesus. - Philippians 3:13-14",
+                            // Add more verses for the "perseverance" category
+                        ];
+                        break;
+
+                    // Thankfulness
+                    case "thankfulness":
+                        verses = [
+                            "Give thanks in all circumstances; for this is God's will for you in Christ Jesus. - 1 Thessalonians 5:18",
+                            "Let the message of Christ dwell among you richly as you teach and admonish one another with all wisdom through psalms, hymns, and songs from the Spirit, singing to God with gratitude in your hearts. - Colossians 3:16",
+                            "Give thanks to the LORD, for he is good; his love endures forever. - 1 Chronicles 16:34",
+                            "I will give thanks to the LORD because of his righteousness; I will sing the praises of the name of the LORD Most High. - Psalm 7:17",
+                            "Do not be anxious about anything, but in every situation, by prayer and petition, with thanksgiving, present your requests to God. - Philippians 4:6",
+                            "And whatever you do, whether in word or deed, do it all in the name of the Lord Jesus, giving thanks to God the Father through him. - Colossians 3:17",
+                            "Give thanks to the LORD, for he is good; his love endures forever. - Psalm 136:1",
+                            "I will give thanks to you, LORD, with all my heart; I will tell of all your wonderful deeds. - Psalm 9:1",
+                            "The LORD is my strength and my shield; my heart trusts in him, and he helps me. My heart leaps for joy, and with my song, I praise him. - Psalm 28:7",
+                            "Let them give thanks to the LORD for his unfailing love and his wonderful deeds for mankind. - Psalm 107:8",
+                            // Add more verses for the "thankfulness" category
+                        ];
+                        break;
+
+                    // Wisdom
+                    case "wisdom":
+                        verses = [
+                            "For the LORD gives wisdom; from his mouth come knowledge and understanding. - Proverbs 2:6",
+                            "The fear of the LORD is the beginning of wisdom, and knowledge of the Holy One is understanding. - Proverbs 9:10",
+                            "The wise in heart are called discerning, and gracious words promote instruction. - Proverbs 16:21",
+                            "Do not be wise in your own eyes; fear the LORD and shun evil. - Proverbs 3:7",
+                            "The one who gets wisdom loves life; the one who cherishes understanding will soon prosper. - Proverbs 19:8",
+                            "If any of you lacks wisdom, you should ask God, who gives generously to all without finding fault, and it will be given to you. - James 1:5",
+                            "How much better to get wisdom than gold, to get insight rather than silver! - Proverbs 16:16",
+                            "Walk with the wise and become wise, for a companion of fools suffers harm. - Proverbs 13:20",
+                            "The fear of the LORD is the beginning of wisdom; all who follow his precepts have good understanding. To him belongs eternal praise. - Psalm 111:10",
+                            "Do not forsake wisdom, and she will protect you; love her, and she will watch over you. - Proverbs 4:6",
+                            // Add more verses for the "wisdom" category
+                        ];
+                        break;
+
+                    // Comfort
+                    case "comfort":
+                        verses = [
+                            "Praise be to the God and Father of our Lord Jesus Christ, the Father of compassion and the God of all comfort, who comforts us in all our troubles, so that we can comfort those in any trouble with the comfort we ourselves receive from God. - 2 Corinthians 1:3-4",
+                            "Come to me, all you who are weary and burdened, and I will give you rest. - Matthew 11:28",
+                            "The LORD is a refuge for the oppressed, a stronghold in times of trouble. - Psalm 9:9",
+                            "I consider that our present sufferings are not worth comparing with the glory that will be revealed in us. - Romans 8:18",
+                            "Cast all your anxiety on him because he cares for you. - 1 Peter 5:7",
+                            "The righteous cry out, and the LORD hears them; he delivers them from all their troubles. - Psalm 34:17",
+                            "The LORD is close to the brokenhearted and saves those who are crushed in spirit. - Psalm 34:18",
+                            "He heals the brokenhearted and binds up their wounds. - Psalm 147:3",
+                            "When anxiety was great within me, your consolation brought me joy. - Psalm 94:19",
+                            "As a mother comforts her child, so will I comfort you; and you will be comforted over Jerusalem. - Isaiah 66:13",
+                            // Add more verses for the "comfort" category
+                        ];
+                        break;
+
+                    // Grace
+                    case "grace":
+                        verses = [
+                            "For it is by grace you have been saved, through faith—and this is not from yourselves, it is the gift of God. - Ephesians 2:8",
+                            "But he said to me, 'My grace is sufficient for you, for my power is made perfect in weakness.' Therefore I will boast all the more gladly about my weaknesses, so that Christ's power may rest on me. - 2 Corinthians 12:9",
+                            "Out of his fullness, we have all received grace in place of grace already given. - John 1:16",
+                            "And if by grace, then it cannot be based on works; if it were, grace would no longer be grace. - Romans 11:6",
+                            "For sin shall no longer be your master, because you are not under the law, but under grace. - Romans 6:14",
+                            "For the grace of God has appeared that offers salvation to all people. It teaches us to say 'No' to ungodliness and worldly passions and to live self-controlled, upright, and godly lives in this present age. - Titus 2:11-12",
+                            "For from his fullness, we have all received, grace upon grace. - John 1:16",
+                            "But the free gift is not like the trespass. For if many died through one man's trespass, much more have the grace of God and the free gift by the grace of that one man Jesus Christ abounded for many. - Romans 5:15",
+                            "But if it is by grace, it is no longer on the basis of works; otherwise, grace would no longer be grace. - Romans 11:6",
+                            "But grow in the grace and knowledge of our Lord and Savior Jesus Christ. To him be the glory both now and to the day of eternity. Amen. - 2 Peter 3:18",
+                            // Add more verses for the "grace" category
+                        ];
+                        break;
+
+                    // Salvation
+                    case "salvation":
+                        verses = [
+                            "For the grace of God has appeared that offers salvation to all people. It teaches us to say 'No' to ungodliness and worldly passions, and to live self-controlled, upright, and godly lives in this present age. - Titus 2:11-12",
+                            "Salvation is found in no one else, for there is no other name under heaven given to mankind by which we must be saved. - Acts 4:12",
+                            "For God did not appoint us to suffer wrath but to receive salvation through our Lord Jesus Christ. - 1 Thessalonians 5:9",
+                            "For the wages of sin is death, but the gift of God is eternal life in Christ Jesus our Lord. - Romans 6:23",
+                            "Whoever believes in the Son has eternal life, but whoever rejects the Son will not see life, for God's wrath remains on them. - John 3:36",
+                            "He has saved us and called us to a holy life—not because of anything we have done but because of his own purpose and grace. This grace was given us in Christ Jesus before the beginning of time. - 2 Timothy 1:9",
+                            "For we are to God the pleasing aroma of Christ among those who are being saved and those who are perishing. - 2 Corinthians 2:15",
+                            "For the message of the cross is foolishness to those who are perishing, but to us who are being saved, it is the power of God. - 1 Corinthians 1:18",
+                            "But we ought always to thank God for you, brothers and sisters loved by the Lord because God chose you as firstfruits to be saved through the sanctifying work of the Spirit and through belief in the truth. - 2 Thessalonians 2:13",
+                            "For the Son of Man came to seek and to save the lost. - Luke 19:10",
+                            // Add more verses for the "salvation" category
+                        ];
+                        break;
+
+                    // Repentance
+                    case "repentance":
+                        verses = [
+                            "Repent, then, and turn to God, so that your sins may be wiped out, that times of refreshing may come from the Lord. - Acts 3:19",
+                            "The Lord is not slow in keeping his promise, as some understand slowness. Instead, he is patient with you, not wanting anyone to perish, but everyone to come to repentance. - 2 Peter 3:9",
+                            "If my people, who are called by my name, will humble themselves and pray and seek my face and turn from their wicked ways, then I will hear from heaven, and I will forgive their sin and will heal their land. - 2 Chronicles 7:14",
+                            "I have not come to call the righteous, but sinners to repentance. - Luke 5:32",
+                            "From that time on, Jesus began to preach, 'Repent, for the kingdom of heaven has come near.' - Matthew 4:17",
+                            "The time has come,' he said. 'The kingdom of God has come near. Repent and believe the good news!' - Mark 1:15",
+                            "In the past, God overlooked such ignorance, but now he commands all people everywhere to repent. - Acts 17:30",
+                            "Those whom I love, I rebuke and discipline. So be earnest and repent. - Revelation 3:19",
+                            "Rend your heart and not your garments. Return to the LORD your God, for he is gracious and compassionate, slow to anger and abounding in love, and he relents from sending calamity. - Joel 2:13",
+                            "If we confess our sins, he is faithful and just and will forgive us our sins and purify us from all unrighteousness. - 1 John 1:9",
+                            // Add more verses for the "repentance" category
+                        ];
+                        break;
+
+                    // Obedience
+                    case "obedience":
+                        verses = [
+                            "If you love me, keep my commands. - John 14:15",
+                            "Blessed rather are those who hear the word of God and obey it. - Luke 11:28",
+                            "This is love for God: to obey his commands. And his commands are not burdensome. - 1 John 5:3",
+                            "Children, obey your parents in everything, for this pleases the Lord. - Colossians 3:20",
+                            "Do not merely listen to the word, and so deceive yourselves. Do what it says. - James 1:22",
+                            "For just as through the disobedience of the one man the many were made sinners, so also through the obedience of the one man the many will be made righteous. - Romans 5:19",
+                            "Samuel replied, 'Does the LORD delight in burnt offerings and sacrifices as much as in obeying the LORD? To obey is better than sacrifice, and to heed is better than the fat of rams. - 1 Samuel 15:22",
+                            "For I command you today to love the LORD your God, to walk in obedience to him, and to keep his commands, decrees, and laws; then you will live and increase, and the LORD your God will bless you in the land you are entering to possess. - Deuteronomy 30:16",
+                            "Whoever heeds discipline shows the way to life, but whoever ignores correction leads others astray. - Proverbs 10:17",
+                            "Has the LORD as great delight in burnt offerings and sacrifices, as in obeying the voice of the LORD? Behold, to obey is better than sacrifice, and to listen than the fat of rams. - 1 Samuel 15:22",
+                            // Add more verses for the "obedience" category
+                        ];
+                        break;
+
+
+
+                    default:
+                        verses = ["No verses found for this category."];
+                        break;
+                }
+
+                // Display the verses in the versesContainer
+                versesContainer.innerHTML = verses.map(verse => `<p>${verse}</p>`).join("");
+            }
+
+            // Automatically display a random category on page load
+            const randomCategory = getRandomCategory();
+            displayVerses(randomCategory);
+            updateSelectedCategoryLink(randomCategory);
+        </script>
+    </div>
+
+    <div class="footer">
+        <div class="footer-content">
+            <span>&copy; 2023 BibleHeaven.org. All rights reserved.</span>
+        </div>
+    </div>
+
+</body>
+
+</html>
+</body>
+
+</html>
